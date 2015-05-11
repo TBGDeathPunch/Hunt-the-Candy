@@ -1,0 +1,146 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+
+
+/* This will enforce block-level properties to HTML5 elements */
+footer, header, nav, article, section, aside, section, figure, figcaption
+ {
+	display: block;
+}
+
+body {
+	background:black;
+	color:white;
+}
+
+#container {
+	background:black;
+	width:850px;
+	margin:auto;
+	padding:18px;
+
+}
+
+#siteTitle {
+	background: black;
+}
+
+#siteTitle h1{
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	text-align:center;
+	text-decoration: underline;
+	margin-bottom: 0.5px;
+}
+
+#siteTitle h2{
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+	text-align:center;
+	margin-top: 1px;
+}
+
+#candy1 {
+	float: left;
+}
+
+#candy2 {
+	float: right;
+}
+
+nav {
+	width: 450px;
+}
+
+#usernameBox {
+	width: 450px;
+}
+
+#confirm {
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+#justPlay {
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	float: right;
+	margin-top: 10px;
+}
+
+#createAccount {
+	background-color: white;
+	color: black;
+	width: 300px;
+	height: 50px;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-left: 75px;
+}
+
+#confirmAccount {
+	background-color: white;
+	color: black;
+	width: 300px;
+	height: 50px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+#pure-control-group h2{
+      margin-bottom: 5px;
+      text-align: left;
+  }
+
+#pure-control-group {
+      margin-bottom: 5px;
+  }
+
+section.eight,section.six,section.five,section.four,section.two,section.three,section.project1,section.project2,section.project3{
+	float:right;
+	width:450px;
+	font-family: 'Lobster', cursive;
+}
+
+ul {
+	list-style:none;
+	padding-left:0px;
+	width:180px;
+}
+
+li {
+	border:1px solid white;
+	text-align:center;
+	padding:5px;
+	margin-bottom:3px;
+	border-radius:4px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color:rgb(16,177,231);
+}
+
+footer {
+	clear:both;
+	text-align:right;
+	font-size:0.9em;
+}
+
+
+
