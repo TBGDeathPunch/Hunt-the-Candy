@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="2246653696479357">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9033840583031937" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="8010783848164187" type="PlayerAnimations">
+                    <param id="0" name="Pin to">Player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="432798285586636" title="Group2">
+            <sub-events>
+                <event-block sid="2791881958386935">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="1524561250455371" type="Player" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6250184808027432">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="3110106832632205" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="6504295397145748" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">&quot;Up&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="865759006385419">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="9579243119531887" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="3100700689997946" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">&quot;Left&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9148422417727302">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="4227519365144575" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="4535534476771192" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">&quot;Down&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4780174078664837">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="588155882808417" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="8393175906828274" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Value">&quot;Right&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7335838897924081">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2984670701525792" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Up&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="8973130874424592" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4575548984974687">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7489879246257066" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3561105805473152" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4187004186107062">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9784478296250581" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Down&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9474352544424931" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4029457647641521">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3891982973540228" type="Player">
+                                    <param id="0" name="Instance variable">Direction</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6375354833816647" type="PlayerAnimations">
+                                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1352602719725981" title="Group3" />
+        <event-block sid="3274517156105879">
+            <conditions>
+                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="1931221798296411" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9684629493492041">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3529897640989363" type="Player">
+                            <param id="0" name="Instance variable">Direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Up&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2196396843100341" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;StandUp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1411753344387247">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2866614519798918" type="Player">
+                            <param id="0" name="Instance variable">Direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4878019013474987" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;StandLeft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3609593107041664">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5039820985837596" type="Player">
+                            <param id="0" name="Instance variable">Direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Down&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9916619030366876" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;StandDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4186653038161225">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="909942322707267" type="Player">
+                            <param id="0" name="Instance variable">Direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3036479307374117" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;StandRight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="8503523007099941" title="Clickbox" />
+        <event-block sid="828847668282988">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4430711302235575" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Waterbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6451583232196304" type="System">
+                    <param id="0" name="Layout">Level4(water)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="175988993898488">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9119143892305134" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Forestbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8071591320345751" type="System">
+                    <param id="0" name="Layout">Level2(forest)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6114575749613946">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6882223855792045" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Hillsbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3957391312270886" type="System">
+                    <param id="0" name="Layout">Level3(hills)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8192145628561348">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8354923742891473" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Mazebox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7724476917454833" type="System">
+                    <param id="0" name="Layout">Level1(maze)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9554054661579903">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7868887214354541" type="Player">
+                    <param id="0" name="Object">Forestbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6867044035953703" type="System">
+                    <param id="0" name="Layout">Level2(forest)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4002798426237676">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5668457840005882" type="Player">
+                    <param id="0" name="Object">Hillsbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4565907778177043" type="System">
+                    <param id="0" name="Layout">Level3(hills)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6713485393239871">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9345460187779514" type="Player">
+                    <param id="0" name="Object">Waterbox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4123775375924376" type="System">
+                    <param id="0" name="Layout">Level4(water)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5675792589886011">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="465361202506989" type="Player">
+                    <param id="0" name="Object">Mazebox</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="579700944430445" type="System">
+                    <param id="0" name="Layout">Level1(maze)</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="CandyCount" sid="4657770623577801" static="0" type="number">50</variable>
+        <variable constant="0" name="gameTimer" sid="6279076724225209" static="0" type="number">0</variable>
+        <variable constant="0" name="gameTimerEndTime" sid="3299803869620871" static="0" type="number">0</variable>
+        <event-group description="" sid="3323903616019667" title="Candy Collect" />
+        <event-block sid="5122242990045342">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9107739999477056" type="Player">
+                    <param id="0" name="Object">candy3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8024197505873116" type="candy3" />
+                <action id="-11" name="Subtract from" sid="1046382150728583" type="System">
+                    <param id="0" name="Variable">CandyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6389489198159204">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1533275322825855" type="Player">
+                    <param id="0" name="Object">candy2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5737157288668105" type="candy2" />
+                <action id="-11" name="Subtract from" sid="9548351575392067" type="System">
+                    <param id="0" name="Variable">CandyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2402507967960197">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1540164791321094" type="Player">
+                    <param id="0" name="Object">candy1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5016414412950366" type="candy1" />
+                <action id="-11" name="Subtract from" sid="7948022743031392" type="System">
+                    <param id="0" name="Variable">CandyCount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="2636349431868341" title="Timer" />
+        <event-block sid="7051458200373178">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8048322797942898" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6213733931326369" type="System">
+                    <param id="0" name="Variable">gameTimer</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+                <action id="0" name="Set text" sid="1934848663404396" type="timer">
+                    <param id="0" name="Text">gameTimer</param>
+                </action>
+                <action id="1" name="Append text" sid="7401647016422026" type="timer">
+                    <param id="0" name="Text">newline &amp; floor(gameTimer / 3600) &amp; &quot;h&quot; &amp; floor(gameTimer / 60 % 60) &amp; &quot;m&quot; &amp; floor(gameTimer % 60) &amp; &quot;s&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="991939665761252">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3633052049449667" type="System">
+                    <param id="0" name="Variable">CandyCount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="6202677782109044" type="Restart">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7233267295679816" type="Addtime">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2728539682635408" type="System">
+                    <param id="0" name="Variable">gameTimerEndTime</param>
+                    <param id="1" name="Value">gameTimer</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1127475099442338" type="FinalTime">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3178768602233454" type="FinalTime">
+                    <param id="0" name="Text">&quot;Time: &quot; &amp;  floor(gameTimer / 3600) &amp; &quot;h&quot; &amp; floor(gameTimer / 60 % 60) &amp; &quot;m&quot; &amp; floor(gameTimer % 60) &amp; &quot;s&quot;</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="6160038815584791" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1303096338236031" title="Restart" />
+        <event-block sid="5482214559285326">
+            <conditions>
+                <condition id="0" name="On clicked" sid="4551447330371899" type="Restart" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1006559563898643" type="System">
+                    <param id="0" name="Layout">CandyHuntLevel1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="527691400345301" type="System" />
+                <action id="-13" name="Set time scale" sid="4137029545662702" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
