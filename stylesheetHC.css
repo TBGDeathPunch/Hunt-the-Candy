@@ -19,7 +19,7 @@ body {
 
 #container {
 	background:black;
-	width:850px;
+	width:900px;
 	margin:auto;
 	padding:18px;
 
@@ -58,6 +58,14 @@ nav {
 
 #usernameBox {
 	width: 450px;
+}
+
+#timesBox {
+	max-width: 90px;
+	max-height: 800px;
+	font-size: 20px;
+	float: left;
+	padding-right: 2px;
 }
 
 #confirm {
@@ -116,6 +124,27 @@ nav {
 	margin-top: 2px;
 	margin-bottom: 10px;
 	float: right;
+}
+
+#logout {
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+#share {
+	background-color: white;
+	color: black;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	margin-top: 2px;
+	margin-bottom: 10px;
 }
 
 #pure-control-group h2{
